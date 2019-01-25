@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MasterMind - Contacts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+</head>
+<body>
+<!---------- HEADER ---------->
+<header>
+	<img src="assets/img/logo.png" alt="logo">
+	<p>Working towards excellence</p>
+	<nav>
+		<div>
+			<a href="index.html">home</a>
+			<p class="container">
+				<a href="#" class="container">about</a>
+				<span class="overlay-header">
+					<a href="#">our history</a>
+					<a href="#">our clients</a>
+					<a href="#">faqs</a>
+				</span>
+			</p>
+			<a href="#">projects</a>
+			<a href="services.html">services</a>
+			<a href="contacts.html">contacts</a>
+		</div>
+	</nav>
+</header>
+<!---------- MAIN ---------->
+<main>
+	<section class="contacts-1">
+		<h1>Contact us</h1>
+
+		<form>
+			<p class="text-sm-black">
+				Use this form to contact us. 
+				<br>
+				Please note that all fields with an <span class="text-sm-orange">*</span> are required.
+			</p>
+
+			<label class="text-sm-black" for="userName">Name <span class="text-sm-orange">*</span></label>
+			<input type="text" name="userName" required="required">
+
+			<label class="text-sm-black" for="userEmail">Email <span class="text-sm-orange">*</span></label>
+			<input type="email" name="userEmail" required="required">
+
+			<label class="text-sm-black" for="userPhone">Phone</label>
+			<input type="text" name="userPhone">
+
+			<label class="text-sm-black" for="userMsg">Message <span class="text-sm-orange">*</span></label>
+			<textarea name="userMsg" rows="3"></textarea>
+			
+			<button type="subscribe" class="btn-orange">send</button>
+		</form>
+
+		<aside>
+			<!---- Leaflet ---->
+			<div id="map" style="width: 100%; height: 50vh"></div>
+			<!---- ------- ---->
+			<span class="d-inBlock">
+				<p class="text-up-blue">us headquarters</p>
+				<p class="text-sm-black">
+					4000 Civic Center Drive<br>
+					Suite 500<br>
+					San Rafael, CA 94903<br>
+					USA<br>
+					Phone +44(0)845 299 8199
+				</p>
+			</span>
+			<span class="d-inBlock">
+				<p class="text-up-blue">uk offices</p>
+				<p class="text-sm-black">
+					1 Sekforde Street, Clerkenwell, London, EC1R 0BE,<br> 
+					United Kingdom<br>
+					Phone +44(0)845 299 8199
+				</p>
+			</span>
+		</aside>
+	</section>
+
+	<div class="bg-gris">
+		<section class="contacts-2">
+			<h1>Our team leaders</h1>
+			<p class="text-sm-black">
+				Get your mouse over the pictures to know more about our team leaders and click on it to get their full contact and CV.
+			</p>
+
+			<div class="container">
+				<img src="assets/img/contacts-profil0.jpg" width="100%" alt="contact-profil-1">
+				<div class="overlay">
+			    	<p class="text-white">Chandler Vancova<br>Marketing Coordinator</p>
+			  	</div>
+			</div>
+			<div class="container">
+				<img src="assets/img/contacts-profil1.jpg" width="100%" alt="contact-profil-2">
+				<div class="overlay">
+			    	<p class="text-white">Diane Marvin<br>Human Resources</p>
+			  	</div>
+			</div>
+			<div class="container">
+				<img src="assets/img/contacts-profil2.jpg" width="100%" alt="contact-profil-3">
+				<div class="overlay">
+			    	<p class="text-white">Patrick Pool<br>Business Development</p>
+			  	</div>
+			</div>
+			<div class="container">
+				<img src="assets/img/contacts-profil3.jpg" width="100%" alt="contact-profil-4">
+				<div class="overlay">
+			    	<p class="text-white">Alise Puse<br>Banking Consultant</p>
+			  	</div>
+			</div>
+			<div class="container">
+				<img src="assets/img/contacts-profil4.jpg" width="100%" alt="contact-profil-5">
+				<div class="overlay">
+			    	<p class="text-white">Mark Johnson<br>Business Analyst</p>
+			  	</div>
+			</div>
+			<div class="container">
+				<img src="assets/img/contacts-profil5.jpg" width="100%" alt="contact-profil-6">
+				<div class="overlay">
+			    	<p class="text-white">Bradley Grosh<br>Commercial Manager</p>
+			  	</div>
+			</div>
+		</section>
+	</div>
+</main>
+<!---------- FOOTER ---------->
+<footer>
+	<div>
+		<p class="text-up-blue"> 
+			mastermind &#9400; 2018<br>
+			<a href="#" class="text-sm-orange">privacy policy</a>
+		</p>
+
+		<form>
+			<label for="newsletter" class="text-up-blue">subscribe to newsletter:</label>
+			<input type="text" name="newsletter" placeholder="your email address">
+			<button class="text-white-bg-blue">OK</button>
+		</form>
+
+		<nav>
+			<a href="#"><i class="fas fa-envelope"></i></a>
+			<a href="#"><i class="fas fa-rss"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+		</nav>
+	</div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+pour le responsive, j'ai voulu optimiser le code et simplifier la mise en place pour effectuer le moin de modification sur les éléments.
+J'ai donc aligner les éléments verticalements pour gagner de la visibilité.
+Pour la navigation, j'ai espacé de sorte à se que les boutons soit accessibles. 
+Le carousel de la page home passe de 4 colones à 2.
+Les images de la page contacts s'alignes deux par deux verticalement.
+Tous les éléments en 'hover' passe en 'click' sur les versions mobiles.
